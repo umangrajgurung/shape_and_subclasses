@@ -8,33 +8,33 @@ Rectangle::Rectangle()
 	length = 1.0;
 }
 
-Rectangle::Rectangle(double widthGiven, double lengthGiven){
-	setWidth(widthGiven);
-	setLength(lengthGiven);
+Rectangle::Rectangle(double width, double length){
+	setWidth(width);
+	setLength(length);
 }
 
-Rectangle::Rectangle(double widthGiven, double lengthGiven, string colorGiven, bool filledState)
-	:Shape(colorGiven, filledState){
-	setWidth(widthGiven);
-	setLength(lengthGiven);
-	setColor(colorGiven);
-	setFilled(filledState);
+Rectangle::Rectangle(double width, double length, string color, bool filled)
+	:Shape(color, filled){
+	setWidth(width);
+	setLength(length);
+	setColor(color);
+	setFilled(filled);
 }
 
 double Rectangle::getWidth(){
 	return width;
 }
 
-void Rectangle::setWidth(double widthGiven){
-	width = widthGiven;
+void Rectangle::setWidth(double width){
+	this->width = width;
 }
 
 double Rectangle::getLength(){
 	return length;
 }
 
-void Rectangle::setLength(double lengthGiven){
-	length = lengthGiven;
+void Rectangle::setLength(double length){
+	this->length = length;
 }
 
 double Rectangle::getArea(){

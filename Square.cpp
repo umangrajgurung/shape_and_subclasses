@@ -4,21 +4,21 @@
 
 Square::Square(){}
 
-Square::Square(double sideGiven){
-	width = sideGiven;
-	length = sideGiven;
+Square::Square(double side){
+	width = side;
+	length = side;
 }
 
-Square::Square(double sideGiven, string colorGiven, bool filledState)
-	:Rectangle(sideGiven, sideGiven, colorGiven, filledState){
-	setSide(sideGiven);
-	setColor(colorGiven);
-	setFilled(filledState);
+Square::Square(double side, string color, bool filled)
+	:Rectangle(side, side, color, filled){
+	setSide(side);
+	setColor(color);
+	setFilled(filled);
 }
 
-void Square::setSide(double sideGiven){
-	setWidth(sideGiven);
-	setLength(sideGiven);
+void Square::setSide(double side){
+	setWidth(side);
+	setLength(side);
 }
 
 double Square::getSide(){

@@ -9,25 +9,25 @@ Shape::Shape()
 	filled = true;
 }
 
-Shape::Shape(string colorGiven, bool filledState){
-	setColor(colorGiven);
-	setFilled(filledState);
+Shape::Shape(string color, bool filled){
+	setColor(color);
+	setFilled(filled);
 }
 
 string Shape::getColor(){
 	return color;
 }
 
-void Shape::setColor(string colorGiven){
-	color = colorGiven;
+void Shape::setColor(string color){
+	this->color = color;
 }
 
 bool Shape::isFilled(){
 	return filled;
 }
 
-void Shape::setFilled(bool filledState){
-	filled = filledState;
+void Shape::setFilled(bool filled){
+	this->filled = filled;
 }
 
 void Shape::toString(){

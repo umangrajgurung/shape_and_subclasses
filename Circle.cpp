@@ -8,19 +8,19 @@ Circle::Circle()
 	setRadius(1.0);
 }
 
-Circle::Circle(double radiusGiven){
-	setRadius(radiusGiven);
+Circle::Circle(double radius){
+	setRadius(radius);
 }
 
-Circle::Circle(double radiusGiven, string colorGiven, bool filledState)
-	:Shape(colorGiven, filledState){
-	setRadius(radiusGiven);
-	setColor(colorGiven);
-	setFilled(filledState);
+Circle::Circle(double radius, string color, bool filled)
+	:Shape(color, filled){
+	setRadius(radius);
+	setColor(color);
+	setFilled(filled);
 }
 
-void Circle::setRadius(double radiusGiven){
-	radius = radiusGiven;
+void Circle::setRadius(double radius){
+	this->radius = radius;
 }
 
 double Circle::getRadius(){
